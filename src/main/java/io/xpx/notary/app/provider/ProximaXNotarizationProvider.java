@@ -35,7 +35,7 @@ import org.slf4j.ext.XLoggerFactory;
 
 
 /**
- * The Class SmartProofNotarizationProvider.
+ * The Class ProximaXNotarizationProvider.
  */
 public final class ProximaXNotarizationProvider implements Notarization {
 
