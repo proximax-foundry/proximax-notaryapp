@@ -1,0 +1,156 @@
+
+#tj-pane:active
+{
+      
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.2, 0.0, 0.0);
+    -fx-background-radius:20 20 20 20;
+    -fx-border-color:transparent;
+    
+     
+}
+#tj-pane:expanded > .title
+{
+    -fx-background-color: #0d68b8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.2, 0.0, 0.0);
+     -fx-background-radius:  20 20 0 0;
+
+   
+  
+}
+#tj-anchor-pane
+{
+    -fx-background-color: white;
+  
+    
+    -fx-border-width:0;
+    -fx-border-color:transparent;
+     
+}
+
+
+
+
+.chart
+{
+    -fx-clockwise:false;
+    -fx-pie-label-visible:true;
+    -fx-label-line-length:15;
+    -fx-start-angle:30;
+    -fx-legend-side:bottom;
+}
+
+.chart-pie-label{
+    -fx-font-size:10px;
+}
+
+.chart-content
+{
+    -fx-padding:0;
+}
+
+.default-color0.chart-pie
+{
+    -fx-pie-color:#0d68b8;
+}
+
+.default-color1.chart-pie
+{
+    -fx-pie-color:#82b8e7;
+}
+
+#pd-pane
+{
+    -fx-background-color: #ffffff;
+  
+}
+#pd-main-pane
+{
+     -fx-background-color: #ffffff;
+     -fx-border-width: 2 2 2 2;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#pd-line
+{
+    -fx-width:50px;
+}
+
+#chat-thread-pane
+{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#nav-bar-pane
+{
+    -fx-background-color: white;  
+    -fx-border-width: 2 0 0 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#chat-box-cell:active
+{
+    
+     -fx-background-color: lightgray;   
+}
+
+#chatbox-pane
+{
+    -fx-background-color: white;  
+    -fx-border-width: 2 0 0 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#chat-thread-heading
+{
+     -fx-background-color: white;  
+    -fx-border-width: 0 0    2 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+#con-heading
+{
+    -fx-background-color: white;  
+    -fx-border-width: 1 0    2 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+#chat-head
+{
+    -fx-padding:0;
+}
+
+#send-box
+{
+      -fx-background-color: white;  
+    -fx-border-width: 2 0 0 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#search-agent-pane
+{
+     -fx-background-color: white;  
+    -fx-border-width: 2 0 0 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+#document-heading
+{
+    -fx-background-color: white;  
+    -fx-border-width: 1 0    2 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}
+
+#billing-cell
+{
+    -fx-background-color: white;  
+    -fx-border-width: 0 0    2 0;
+    -fx-border-style: solid;
+    -fx-border-color:lightgray
+}

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListCell?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.FXMLController">
+   <stylesheets>
+      <URL value="@/styles/Styles.css" />
+   </stylesheets>
+   <children>
+      <Pane id="nav-bar-pane" layoutX="3.0" prefHeight="93.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+         <children>
+            <Pane layoutX="159.0" layoutY="7.0" prefHeight="80.0" prefWidth="900.0">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Search Agents" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/documents_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Wireless Requests" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/message_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Transactions" textAlignment="CENTER" textFill="#0d68b8">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/transac_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="750.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Chats" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/chat_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Dashboard" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                     <font>
+                        <Font name="Nunito Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard_ic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutY="7.0" prefHeight="80.0" prefWidth="159.0">
+               <children>
+                  <Label layoutX="42.0" layoutY="32.0" text="Brand &amp; Logo">
+                     <font>
+                        <Font name="Nunito Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane id="pd-main-pane" layoutX="1068.0" prefHeight="786.0" prefWidth="298.0" stylesheets="@../styles/Styles.css">
+         <children>
+            <Pane id="pd-pane" layoutX="4.0" layoutY="14.0" prefHeight="80.0" prefWidth="290.0" stylesheets="@../styles/Styles.css">
+               <children>
+                  <Label layoutX="95.0" layoutY="20.0">
+                     <font>
+                        <Font name="Nunito Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="57.0" fitWidth="177.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/alvin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="17.0" layoutY="134.0" text="PERSONAL DETAILS">
+               <font>
+                  <Font name="Nunito Bold" size="13.0" />
+               </font>
+            </Label>
+            <Line id="pd-line" endX="100.0" layoutX="187.0" layoutY="109.0" startX="-170.0" stroke="#9e9999" strokeMiterLimit="15.0" />
+            <Label layoutX="17.0" layoutY="161.0" text="Name" textFill="#5e5d5d">
+               <font>
+                  <Font name="Nunito Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="218.0" text="Contact Number" textFill="#5e5d5d">
+               <font>
+                  <Font name="Nunito Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="284.0" text="ID Number" textFill="#5e5d5d">
+               <font>
+                  <Font name="Nunito Bold" size="12.0" />
+               </font>
+            </Label>
+            <Line id="pd-line" endX="100.0" layoutX="187.0" layoutY="394.0" startX="-170.0" stroke="#9e9999" strokeMiterLimit="15.0" />
+            <Label layoutX="19.0" layoutY="418.0" text="Address" textFill="#5e5d5d">
+               <font>
+                  <Font name="Nunito Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="496.0" text="Other Info" textFill="#5e5d5d">
+               <font>
+                  <Font name="Nunito Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="183.0" text="Calvin &quot;Panot&quot; Reyes">
+               <font>
+                  <Font name="Nunito Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="242.0" text="09178032444">
+               <font>
+                  <Font name="Nunito Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="311.0" text="2018-021196">
+               <font>
+                  <Font name="Nunito Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="447.0" text="Somewhere in Canada">
+               <font>
+                  <Font name="Nunito Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="522.0" text="Father is Panot also">
+               <font>
+                  <Font name="Nunito Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="search-agent-pane" layoutY="93.0" prefHeight="689.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+         <children>
+            <ScrollPane id="chat-thread-pane" prefHeight="689.0" prefWidth="313.0" stylesheets="@../styles/Styles.css">
+               <content>
+                  <AnchorPane prefHeight="689.0" prefWidth="313.0">
+                     <children>
+                        <Pane prefHeight="689.0" prefWidth="313.0" style="-fx-background-color: white;">
+                           <children>
+                              <JFXListCell id="chat-box-cell" editable="false" layoutY="57.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Marvin Jay Reyes" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Nunito Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/calvin_profile.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXListCell>
+                              <JFXListCell id="chat-box-cell" editable="false" layoutY="121.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Derp Kid Reyes" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Nunito Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/calvin_profile.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXListCell>
+                              <JFXListCell id="chat-box-cell" editable="false" layoutY="185.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Panot Reyes" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Nunito Bold" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/calvin_profile.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXListCell>
+                              <Pane id="chat-thread-heading" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css">
+                                 <children>
+                                    <Label layoutX="90.0" layoutY="15.0" text="Documents">
+                                       <font>
+                                          <Font name="Nunito Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Pane layoutX="313.0" prefHeight="689.0" prefWidth="755.0">
+               <children>
+                  <Pane id="document-heading" prefHeight="268.0" prefWidth="755.0" stylesheets="@../styles/Styles.css">
+                     <children>
+                        <ImageView fitHeight="317.0" fitWidth="298.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Pictures/Aj/20171219_181147.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="330.0" layoutY="24.0" text="Document Details" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="330.0" layoutY="57.0" text="Barangay Clearance">
+                           <font>
+                              <Font name="Nunito Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="330.0" layoutY="95.0" text="Acknowledgement Number" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="330.0" layoutY="132.0" text="012345678987654321">
+                           <font>
+                              <Font name="Nunito Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="330.0" layoutY="172.0" text="Status" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="330.0" layoutY="204.0" text="Incomplete">
+                           <font>
+                              <Font name="Nunito Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="268.0" prefHeight="377.0" prefWidth="755.0">
+                     <children>
+                        <JFXTextArea layoutX="24.0" layoutY="38.0" prefHeight="57.0" prefWidth="380.0" />
+                        <Label layoutX="24.0" layoutY="14.0" text="Documents Passed" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXTextArea layoutX="24.0" layoutY="144.0" prefHeight="57.0" prefWidth="380.0" />
+                        <Label layoutX="24.0" layoutY="118.0" text="Required Documents" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="494.0" layoutY="102.0" prefHeight="57.0" prefWidth="187.0" text="Save Documents" textAlignment="CENTER" textFill="#0d68b8">
+                           <font>
+                              <Font name="Nunito Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/documents_ic.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="494.0" layoutY="178.0" prefHeight="57.0" prefWidth="187.0" text="Make Payment" textAlignment="CENTER" textFill="#0d68b8">
+                           <font>
+                              <Font name="Nunito Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/transac_ic.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXTextArea layoutX="24.0" layoutY="249.0" prefHeight="57.0" prefWidth="380.0" />
+                        <Label layoutX="24.0" layoutY="223.0" text="Witness" textFill="#5e5d5d">
+                           <font>
+                              <Font name="Nunito Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
