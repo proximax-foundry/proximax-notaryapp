@@ -1,10 +1,14 @@
 package io.xpx.notary.app.controller;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,20 +20,18 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-public class LoginController {
+public class LoginController extends AbstractController implements Initializable {
+	
 	@FXML
 	private Pane loginPane;
-
 	@FXML
 	private TextField addressField;
-
 	@FXML
 	private PasswordField passwordField;
 
 	private Alert alert;
 
 	public void login(ActionEvent event) {
-
 		try {
 			// validate
 			try {
@@ -44,7 +46,7 @@ public class LoginController {
 			}
 
 			// load
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/ui/NemIpfsMain.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Scene.fxml"));
 			Parent root;
 			root = loader.load();
 			Scene scene = new Scene(root);
@@ -63,7 +65,7 @@ public class LoginController {
 	public void signUp(Event event) {
 		// loginPane.getScene().getWindow().hide();
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/ui/SignUpUi.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Registration.fxml"));
 		Parent root = null;
 		try {
 			root = loader.load();
@@ -91,6 +93,12 @@ public class LoginController {
 		// new NemTransactionHandler(UserSessionContext.getAddress()))
 		// .monitor();
 
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
