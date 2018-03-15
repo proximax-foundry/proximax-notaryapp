@@ -5,7 +5,7 @@ Decentralized Notary App using Proxima-X SDK.
 ## Technology Stack
 
 *   Java 1.8
-*   Jfoenix
+*   JFoenix
 *   Proxima-X daemon
 
 ## Development
