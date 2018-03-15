@@ -1,4 +1,4 @@
-package io.xpx.notary.app.listener;
+package io.xpx.notary.app.process;
 
 import java.lang.reflect.Type;
 
