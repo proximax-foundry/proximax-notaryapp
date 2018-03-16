@@ -2,7 +2,7 @@
 #tj-pane:active
 {
       
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.2, 0.0, 0.0);
+   
     -fx-background-radius:20 20 20 20;
     -fx-border-color:transparent;
     
@@ -10,8 +10,8 @@
 }
 #tj-pane:expanded > .title
 {
-    -fx-background-color: #0d68b8;
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.2, 0.0, 0.0);
+    -fx-background-color: #20b5ac;
+   
      -fx-background-radius:  20 20 0 0;
 
    
@@ -19,7 +19,7 @@
 }
 #tj-anchor-pane
 {
-    -fx-background-color: white;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
   
     
     -fx-border-width:0;
@@ -58,14 +58,10 @@
     -fx-pie-color:#82b8e7;
 }
 
-#pd-pane
-{
-    -fx-background-color: #ffffff;
-  
-}
+
 #pd-main-pane
 {
-     -fx-background-color: #ffffff;
+     -fx-background-color: rgba(255, 255, 255, 0.8);
      -fx-border-width: 2 2 2 2;
     -fx-border-style: solid;
     -fx-border-color:lightgray
@@ -85,7 +81,7 @@
 
 #nav-bar-pane
 {
-    -fx-background-color: white;  
+    -fx-background-color: rgba(255, 255, 255, 0.8);
     -fx-border-width: 2 0 0 0;
     -fx-border-style: solid;
     -fx-border-color:lightgray
@@ -153,4 +149,46 @@
     -fx-border-width: 0 0    2 0;
     -fx-border-style: solid;
     -fx-border-color:lightgray
+}
+
+#login-pane
+{
+      -fx-background-color: white;
+       -fx-border-style: soli   d;
+    -fx-border-color:lightgray;
+    -fx-border-radius: 20 20 20 20;
+     -fx-background-radius:  20 20 20 20;
+}
+#login-pane-header{
+    -fx-background-radius:  20 20 0 0;
+}
+
+i
+{
+     -fx-background-radius:  10 10 10 10;
+     -fx-background-color: #20b5ac;
+}
+
+#login-anchor-pane{
+     -fx-background-image: url("../images/background.png");
+}
+
+#register-pane{
+    
+     -fx-background-color: rgba(255, 255, 255, 0.8);
+       -fx-border-style: solid;
+    -fx-border-color:lightgray;
+    -fx-border-radius: 20 20 20 20;
+     -fx-background-radius:  20 20 20 20;
+    
+}
+
+#login-pane-btn{
+    -fx-background-color: #20b5ac;
+       -fx-background-radius:  20 20 20 20;
+}
+
+#register-pane-header{
+      -fx-background-color: #20b5ac;
+       -fx-background-radius:  20 20 0 0;
 }

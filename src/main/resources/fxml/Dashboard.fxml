@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXListCell?>
-<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,158 +11,149 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.DocumentsController">
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.FXMLController">
    <children>
-      <Pane id="tj-anchor-pane" layoutY="93.0" prefHeight="672.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+      <Pane layoutY="93.0" prefHeight="673.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
          <children>
-            <ScrollPane id="chat-thread-pane" prefHeight="672.0" prefWidth="313.0" stylesheets="@../styles/Styles.css">
+            <TitledPane id="tj-pane" fx:id="tjPane1" cacheShape="false" centerShape="false" collapsible="false" ellipsisString="0" focusTraversable="false" layoutX="681.0" layoutY="14.0" pickOnBounds="false" prefHeight="321.0" prefWidth="282.0" scaleShape="false" style="-fx-background-radius: 10px 10px 10px 10px; -fx-border-radius: 10px 10px 10px 10px;" stylesheets="@../styles/Styles.css" text="Requests" textFill="WHITE" textOverrun="CLIP">
                <content>
-                  <AnchorPane prefHeight="667.0" prefWidth="313.0">
+                  <AnchorPane id="tj-anchor-pane" minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="280.0" stylesheets="@../styles/Styles.css">
                      <children>
-                        <Pane prefHeight="672.0" prefWidth="313.0" style="-fx-background-color: white;">
-                           <children>
-                              <JFXListCell id="chat-box-cell" editable="false" layoutY="57.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Marvin Jay Reyes" textAlignment="CENTER">
-                                 <font>
-                                    <Font name="Nunito Bold" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../images/calvin_profile.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </JFXListCell>
-                              <JFXListCell id="chat-box-cell" editable="false" layoutY="121.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Derp Kid Reyes" textAlignment="CENTER">
-                                 <font>
-                                    <Font name="Nunito Bold" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../images/calvin_profile.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </JFXListCell>
-                              <JFXListCell id="chat-box-cell" editable="false" layoutY="185.0" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css" text="Panot Reyes" textAlignment="CENTER">
-                                 <font>
-                                    <Font name="Nunito Bold" size="18.0" />
-                                 </font>
-                                 <graphic>
-                                    <ImageView fitHeight="48.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../images/calvin_profile.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                              </JFXListCell>
-                              <Pane id="chat-thread-heading" prefHeight="57.0" prefWidth="303.0" stylesheets="@../styles/Styles.css">
-                                 <children>
-                                    <Label layoutX="90.0" layoutY="15.0" text="Documents">
-                                       <font>
-                                          <Font name="Nunito Bold" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </Pane>
+                        <ImageView fitHeight="198.0" fitWidth="210.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/message_ic.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="42.0" layoutY="212.0" text="32 Pending Requests" textFill="#000b14">
+                           <font>
+                              <Font name="Nunito Bold" size="20.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
                </content>
-            </ScrollPane>
-            <Pane id="tj-anchor-pane" layoutX="313.0" prefHeight="672.0" prefWidth="755.0" stylesheets="@../styles/Styles.css">
-               <children>
-                  <Pane id="tj-anchor-pane" prefHeight="268.0" prefWidth="755.0" stylesheets="@../styles/Styles.css">
+               <font>
+                  <Font name="Nunito Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/message_ic_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TitledPane>
+            <TitledPane id="tj-pane" fx:id="tjPane11" cacheShape="false" centerShape="false" collapsible="false" ellipsisString="0" focusTraversable="false" layoutX="64.0" layoutY="359.0" pickOnBounds="false" prefHeight="307.0" prefWidth="282.0" scaleShape="false" style="-fx-background-radius: 10px 10px 10px 10px; -fx-border-radius: 10px 10px 10px 10px;" stylesheets="@../styles/Styles.css" text="Response" textFill="WHITE" textOverrun="CLIP">
+               <content>
+                  <AnchorPane id="tj-anchor-pane" minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="280.0" stylesheets="@../styles/Styles.css">
                      <children>
-                        <ImageView fitHeight="317.0" fitWidth="298.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="198.0" fitWidth="210.0" layoutX="41.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Aj/20171219_181147.jpg" />
+                              <Image url="@../images/customer_ic.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="330.0" layoutY="24.0" text="Document Details" textFill="#5e5d5d">
+                        <Label layoutX="54.0" layoutY="203.0" text="Pending Response">
                            <font>
-                              <Font name="Nunito Bold" size="17.0" />
+                              <Font name="Nunito Bold" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="330.0" layoutY="57.0" text="Barangay Clearance">
+                        <Label layoutX="89.0" layoutY="237.0" text="10 Customers">
                            <font>
-                              <Font name="Nunito Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="330.0" layoutY="95.0" text="Acknowledgement Number" textFill="#5e5d5d">
-                           <font>
-                              <Font name="Nunito Bold" size="17.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="330.0" layoutY="132.0" text="012345678987654321">
-                           <font>
-                              <Font name="Nunito Bold" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="330.0" layoutY="172.0" text="Status" textFill="#5e5d5d">
-                           <font>
-                              <Font name="Nunito Bold" size="17.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="330.0" layoutY="204.0" text="Incomplete">
-                           <font>
-                              <Font name="Nunito Bold" size="18.0" />
+                              <Font name="Nunito Bold" size="16.0" />
                            </font>
                         </Label>
                      </children>
-                  </Pane>
-                  <Pane id="tj-anchor-pane" layoutY="262.0" prefHeight="377.0" prefWidth="755.0" stylesheets="@../styles/Styles.css">
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Nunito Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/customer_ic_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TitledPane>
+            <TitledPane id="tj-pane" fx:id="tjPane12" cacheShape="false" centerShape="false" collapsible="false" ellipsisString="0" focusTraversable="false" layoutX="372.0" layoutY="359.0" pickOnBounds="false" prefHeight="307.0" prefWidth="282.0" scaleShape="false" style="-fx-background-radius: 10px 10px 10px 10px; -fx-border-radius: 10px 10px 10px 10px;" stylesheets="@../styles/Styles.css" text="Reports" textFill="WHITE" textOverrun="CLIP">
+               <content>
+                  <AnchorPane id="tj-anchor-pane" minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="280.0" stylesheets="@../styles/Styles.css">
                      <children>
-                        <JFXTextArea layoutX="24.0" layoutY="38.0" prefHeight="57.0" prefWidth="380.0" />
-                        <Label layoutX="24.0" layoutY="14.0" text="Documents Passed" textFill="#5e5d5d">
+                        <ImageView fitHeight="198.0" fitWidth="210.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/documents_ic.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="42.0" layoutY="212.0" text="32 Pending Requests" textFill="#000b14">
                            <font>
-                              <Font name="Nunito Bold" size="17.0" />
+                              <Font name="Nunito Bold" size="20.0" />
                            </font>
                         </Label>
-                        <JFXTextArea layoutX="24.0" layoutY="144.0" prefHeight="57.0" prefWidth="380.0" />
-                        <Label layoutX="24.0" layoutY="118.0" text="Required Documents" textFill="#5e5d5d">
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Nunito Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/documents_ic_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TitledPane>
+            <TitledPane id="tj-pane" fx:id="tjPane13" cacheShape="false" centerShape="false" collapsible="false" ellipsisString="0" focusTraversable="false" layoutX="681.0" layoutY="359.0" pickOnBounds="false" prefHeight="307.0" prefWidth="282.0" scaleShape="false" style="-fx-background-radius: 10px 10px 10px 10px; -fx-border-radius: 10px 10px 10px 10px;" stylesheets="@../styles/Styles.css" text="Chats" textFill="WHITE" textOverrun="CLIP">
+               <content>
+                  <AnchorPane id="tj-anchor-pane" minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="280.0" style=": #000000;">
+                     <children>
+                        <ImageView fitHeight="198.0" fitWidth="210.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/chat_ic_small.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="42.0" layoutY="212.0" text="2 Unread Messages" textFill="#000b14">
                            <font>
-                              <Font name="Nunito Bold" size="17.0" />
+                              <Font name="Nunito Bold" size="20.0" />
                            </font>
                         </Label>
-                        <JFXButton buttonType="RAISED" layoutX="494.0" layoutY="102.0" prefHeight="57.0" prefWidth="187.0" text="Save Documents" textAlignment="CENTER" textFill="#0d68b8">
-                           <font>
-                              <Font name="Nunito Bold" size="15.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/documents_ic.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </JFXButton>
-                        <JFXButton buttonType="RAISED" layoutX="494.0" layoutY="178.0" prefHeight="57.0" prefWidth="187.0" text="Make Payment" textAlignment="CENTER" textFill="#0d68b8">
-                           <font>
-                              <Font name="Nunito Bold" size="15.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/transac_ic.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </JFXButton>
-                        <JFXTextArea layoutX="24.0" layoutY="249.0" prefHeight="57.0" prefWidth="380.0" />
-                        <Label layoutX="24.0" layoutY="223.0" text="Witness" textFill="#5e5d5d">
-                           <font>
-                              <Font name="Nunito Bold" size="17.0" />
-                           </font>
-                        </Label>
-                     </children></Pane>
-               </children>
-            </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Nunito Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/chat_ic_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </TitledPane>
+            <TitledPane id="tj-pane" animated="false" collapsible="false" layoutX="64.0" layoutY="14.0" prefHeight="321.0" prefWidth="593.0" stylesheets="@../styles/Styles.css" text="Journals" textFill="WHITE">
+              <content>
+                <AnchorPane id="tj-anchor-pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@../styles/Styles.css">
+                     <children>
+                        <PieChart id="pieChart" fx:id="chart" layoutX="16.0" layoutY="19.0" prefHeight="257.0" prefWidth="560.0" stylesheets="@../styles/Styles.css" />
+                     </children>
+                  </AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/documents_ic_white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Nunito Bold" size="15.0" />
+               </font>
+            </TitledPane>
          </children>
       </Pane>
-      <Pane id="nav-bar-pane" layoutY="-2.0" prefHeight="96.0" prefWidth="1070.0" stylesheets="@../styles/Styles.css">
+      <Pane id="nav-bar-pane" prefHeight="93.0" prefWidth="1070.0" stylesheets="@../styles/Styles.css">
          <children>
             <Pane layoutX="159.0" layoutY="7.0" prefHeight="80.0" prefWidth="900.0">
                <children>
@@ -252,7 +242,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane id="pd-main-pane" layoutX="1068.0" layoutY="-2.0" prefHeight="768.0" prefWidth="298.0" stylesheets="@../styles/Styles.css">
+      <Pane id="pd-main-pane" layoutX="1068.0" prefHeight="768.0" prefWidth="298.0" stylesheets="@../styles/Styles.css">
          <children>
             <Pane id="pd-pane" layoutX="4.0" layoutY="14.0" prefHeight="80.0" prefWidth="290.0" stylesheets="@../styles/Styles.css">
                <children>

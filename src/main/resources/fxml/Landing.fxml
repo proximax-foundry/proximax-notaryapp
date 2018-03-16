@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.LoginController">
+   <children>
+      <Pane prefHeight="768.0" prefWidth="977.0">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="464.0" layoutX="40.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/proximaxweb.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="288.0" text="INTRODUCING A BLOCKCHAIN 3.0 PROTOCOL" textFill="#20b5ac">
+               <font>
+                  <Font name="Lato Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="322.0" lineSpacing="10.0" prefHeight="250.0" prefWidth="847.0" text="ProximaX is a revolution on top of the existing evolution of Blockchain and DLT with the creation of a utility-rich platform and protocol in which businesses, enterprises and entrepreneurial innovators can avoid costly, failure-prone centralized architectures yet enjoy sustainable and secure service offerings. content delivery and storage, streaming media, decentralized marketplaces, big-data, measurement &amp; analytics, IoT, and flawless record keeping and KYC are just a few use cases for ProximaX." textFill="#838080" wrapText="true">
+               <font>
+                  <Font name="Lato Regular" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton id="login-pane-btn" layoutX="40.0" layoutY="572.0" prefHeight="47.0" prefWidth="201.0" stylesheets="@../styles/Styles.css" text="Learn more">
+               <font>
+                  <Font name="Lato Regular" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="login-pane-btn" layoutX="309.0" layoutY="572.0" prefHeight="47.0" prefWidth="201.0" stylesheets="@../styles/Styles.css" text="Get it now!">
+               <font>
+                  <Font name="Lato Regular" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

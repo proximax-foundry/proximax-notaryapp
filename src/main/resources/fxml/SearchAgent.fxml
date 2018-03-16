@@ -14,83 +14,80 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.FXMLController">
-   <stylesheets>
-      <URL value="@/styles/Styles.css" />
-   </stylesheets>
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.SearchAgentController">
    <children>
-      <Pane id="nav-bar-pane" prefHeight="93.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+      <Pane id="nav-bar-pane" layoutX="-1.0" prefHeight="93.0" prefWidth="1070.0" stylesheets="@../styles/Styles.css">
          <children>
             <Pane layoutX="159.0" layoutY="7.0" prefHeight="80.0" prefWidth="900.0">
                <children>
-                  <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Search Agents" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Search Agents" textAlignment="CENTER" textFill="#717272" wrapText="true">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/search_ic.png" />
+                              <Image url="@../images/search.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#717272" wrapText="true">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/documents_ic.png" />
+                              <Image url="@../images/docs.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Wireless Requests" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Wireless Requests" textAlignment="CENTER" textFill="#717272" wrapText="true">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/message_ic.png" />
+                              <Image url="@../images/mail.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Transactions" textAlignment="CENTER" textFill="#0d68b8">
+                  <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Transactions" textAlignment="CENTER" textFill="#717272">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/transac_ic.png" />
+                              <Image url="@../images/print.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="750.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Chats" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutX="750.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Chats" textAlignment="CENTER" textFill="#717272" wrapText="true">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/chat_ic.png" />
+                              <Image url="@../images/chat.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Dashboard" textAlignment="CENTER" textFill="#0d68b8" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Dashboard" textAlignment="CENTER" textFill="#717272" wrapText="true">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/dashboard_ic.png" />
+                              <Image url="@../images/dash.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -108,7 +105,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane id="pd-main-pane" layoutX="1068.0" prefHeight="786.0" prefWidth="298.0" stylesheets="@../styles/Styles.css">
+      <Pane id="pd-main-pane" layoutX="1067.0" prefHeight="768.0" prefWidth="298.0">
          <children>
             <Pane id="pd-pane" layoutX="4.0" layoutY="14.0" prefHeight="80.0" prefWidth="290.0" stylesheets="@../styles/Styles.css">
                <children>
@@ -182,10 +179,14 @@
                </font>
             </Label>
          </children>
+         <stylesheets>
+            <URL value="@../styles/Styles.css" />
+            <URL value="@../styles/Styles.css" />
+         </stylesheets>
       </Pane>
-      <Pane id="search-agent-pane" layoutY="93.0" prefHeight="689.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+      <Pane id="search-agent-pane" layoutY="93.0" prefHeight="674.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
          <children>
-            <Pane prefHeight="689.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
+            <Pane id="tj-anchor-pane" prefHeight="674.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
                <children>
                   <Label layoutX="368.0" layoutY="230.0" text="SEARCH FOR AN AGENT">
                      <font>

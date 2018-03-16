@@ -3,20 +3,62 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.xpx.notary.app.controller.LoginController">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <children>
-            <JFXTextField layoutX="141.0" layoutY="94.0" prefHeight="25.0" prefWidth="359.0" />
-            <JFXTextField layoutX="141.0" layoutY="200.0" prefHeight="25.0" prefWidth="359.0" />
-            <JFXButton layoutX="141.0" layoutY="309.0" prefHeight="25.0" prefWidth="146.0" text="Logon" />
-            <Label layoutX="293.0" layoutY="132.0" text="Username" />
-            <Label layoutX="294.0" layoutY="239.0" prefHeight="0.0" prefWidth="54.0" text="Password" />
-            <JFXButton onAction="#register" layoutX="348.0" layoutY="309.0" prefHeight="25.0" prefWidth="146.0" text="Register" />
-      </children>
-    </AnchorPane>
-  </children>
-</VBox>
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.LoginController">
+   <children>
+      <Pane layoutX="188.0" layoutY="1.0" prefHeight="768.0" prefWidth="964.0">
+         <children>
+            <Pane id="login-pane" layoutX="270.0" layoutY="65.0" prefHeight="638.0" prefWidth="425.0" stylesheets="@../styles/Styles.css">
+               <children>
+                  <JFXTextField focusColor="#78b6e4" layoutX="90.0" layoutY="367.0" prefHeight="38.0" prefWidth="244.0" promptText="Password">
+                     <font>
+                        <Font name="Lato Regular" size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="181.0" fitWidth="241.0" layoutX="122.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Proximax-Shield-Logo1-rgb.png" />
+                     </image>
+                  </ImageView>
+                  <Pane id="login-pane-header" prefHeight="53.0" prefWidth="425.0" style="-fx-background-color: #f5a503;" stylesheets="@../styles/Styles.css">
+                     <children>
+                        <Label layoutX="141.0" layoutY="14.0" text="Welcome back!" textFill="WHITE">
+                           <font>
+                              <Font name="Lato Regular" size="20.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+                  <JFXTextField focusColor="#eb6101" layoutX="90.0" layoutY="319.0" prefHeight="38.0" prefWidth="244.0" promptText="Username">
+                     <font>
+                        <Font name="Lato Regular" size="19.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="443.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Login">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="539.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Register">
+                     <font>
+                        <Font name="Lato Regular" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="100.0" layoutX="82.0" layoutY="517.0" opacity="0.6" startX="10.0" stroke="#a39e9e" />
+                  <Line endX="100.0" layoutX="234.0" layoutY="517.0" opacity="0.6" startX="10.0" stroke="#a39e9e" />
+                  <Label layoutX="205.0" layoutY="507.0" text="or" textFill="#4a4949">
+                     <font>
+                        <Font name="Lato Regular" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
