@@ -12,7 +12,7 @@ Decentralized Notary App using Proxima-X SDK.
 Clone the repository
 
 ```shell
-//	For collaborators only.
+// For collaborators only.
 git clone https://github.com/alvin-reyes/proximax-notaryapp.git
 ```
 

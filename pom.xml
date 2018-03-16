@@ -17,6 +17,12 @@
 					</execution>
 				</executions>
 				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>io.xpx.notary.app.main.NotaryApplicationEntry</mainClass>
+						</manifest>
+					</archive>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
@@ -30,6 +36,29 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>moveFiles</id>
+						<phase>install</phase>
+						<configuration>
+							<tasks>
+								<copy todir="${basedir}/target" flatten="true" overwrite="true"
+									verbose="true" failonerror="true">
+									<fileset dir="${basedir}/src/main/resources/node/"
+										includes="proximax.exe" />
+									<fileset dir="${basedir}/src/main/resources/node/"
+										includes="runp2p.bat" />
+								</copy>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

@@ -2,6 +2,7 @@ package io.xpx.notary.app.main;
 
 import java.io.IOException;
 
+import io.xpx.notary.app.process.ProximaXDaemonRunner;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,12 +22,16 @@ public class NotaryApplicationEntry extends Application {
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.show();
-
+			runNode();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		// Run monitor tool
+	}
+
+	private void runNode() {
+		new Thread(new ProximaXDaemonRunner()).start();
 	}
 
 	public static void main(String[] args) {

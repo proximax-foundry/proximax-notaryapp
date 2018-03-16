@@ -9,7 +9,7 @@ public class ProximaXDaemonRunner implements Runnable {
 	public void run() {
 
 		try {
-			String cmd = "proximax.exe daemon";
+			String cmd = "cmd runp2p.bat";
 			if (isUnix() || isMac()) {
 				cmd = "./proximax daemon &> proximax.out &";
 			}
