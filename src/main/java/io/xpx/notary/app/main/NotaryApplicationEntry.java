@@ -15,7 +15,7 @@ public class NotaryApplicationEntry extends Application {
 	public void start(Stage primaryStage) {
 		try {
 
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Scene.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Login.fxml"));
 			Parent root;
 			root = loader.load();
 			Scene scene = new Scene(root);

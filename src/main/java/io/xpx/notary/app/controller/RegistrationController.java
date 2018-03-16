@@ -31,8 +31,8 @@ public class RegistrationController extends AbstractController implements Initia
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		networkChoice.setItems(FXCollections.observableArrayList("Select Network", "testnet"));
-		networkChoice.getSelectionModel().select(0);
+		//networkChoice.setItems(FXCollections.observableArrayList("Select Network", "testnet"));
+		//networkChoice.getSelectionModel().select(0);
 	}
 
 	public void create(Event event) {

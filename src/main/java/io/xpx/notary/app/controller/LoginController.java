@@ -21,15 +21,20 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class LoginController extends AbstractController implements Initializable {
-	
+
 	@FXML
 	private Pane loginPane;
 	@FXML
 	private TextField addressField;
 	@FXML
 	private PasswordField passwordField;
-
 	private Alert alert;
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+
+	}
 
 	public void login(ActionEvent event) {
 		try {
@@ -62,7 +67,7 @@ public class LoginController extends AbstractController implements Initializable
 		}
 	}
 
-	public void signUp(Event event) {
+	public void register(Event event) {
 		// loginPane.getScene().getWindow().hide();
 
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Registration.fxml"));
@@ -93,12 +98,6 @@ public class LoginController extends AbstractController implements Initializable
 		// new NemTransactionHandler(UserSessionContext.getAddress()))
 		// .monitor();
 
-	}
-
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
