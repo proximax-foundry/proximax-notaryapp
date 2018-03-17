@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.FXMLController">
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.xpx.notary.app.controller.DashboardController">
    <children>
       <Pane layoutY="93.0" prefHeight="673.0" prefWidth="1068.0" stylesheets="@../styles/Styles.css">
          <children>
@@ -169,7 +169,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#717272" wrapText="true">
+                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#717272" wrapText="true" onAction="#goToNotaryRegistration">
                      <font>
                         <Font name="Nunito Bold" size="15.0" />
                      </font>

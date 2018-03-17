@@ -51,7 +51,7 @@ public class LoginController extends AbstractController implements Initializable
 			}
 
 			// load
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Scene.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Dashboard.fxml"));
 			Parent root;
 			root = loader.load();
 			Scene scene = new Scene(root);
