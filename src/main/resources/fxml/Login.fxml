@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="login-anchor-pane" fx:id="loginPane" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.xpx.notary.app.controller.LoginController">
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.LoginController">
    <children>
       <Pane layoutX="188.0" layoutY="1.0" prefHeight="768.0" prefWidth="964.0">
          <children>
@@ -39,12 +39,12 @@
                         <Font name="Lato Regular" size="19.0" />
                      </font>
                   </JFXTextField>
-                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="443.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Login" onAction="#login">
+                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="443.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Login">
                      <font>
                         <Font name="Lato Regular" size="17.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="539.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Register" onAction="#register">
+                  <JFXButton id="login-pane-btn" layoutX="91.0" layoutY="539.0" prefHeight="53.0" prefWidth="244.0" stylesheets="@../styles/Styles.css" text="Register">
                      <font>
                         <Font name="Lato Regular" size="17.0" />
                      </font>

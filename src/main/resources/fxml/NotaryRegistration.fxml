@@ -9,175 +9,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.xpx.notary.app.controller.NotarizeDocumentController">
+<AnchorPane id="login-anchor-pane" fx:id="createNew" prefHeight="770.0" prefWidth="1075.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.circuit.sample3.LoginController">
    <children>
-      <Pane id="nav-bar-pane" prefHeight="93.0" prefWidth="1070.0" stylesheets="@../styles/Styles.css">
-         <children>
-            <Pane layoutX="159.0" layoutY="7.0" prefHeight="80.0" prefWidth="900.0">
-               <children>
-                  <JFXButton buttonType="RAISED" layoutX="150.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Search Agents" textAlignment="CENTER" textFill="#717272" wrapText="true">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/search.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="300.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Notarized Documents" textAlignment="CENTER" textFill="#717272" wrapText="true">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/docs.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Wireless Requests" textAlignment="CENTER" textFill="#717272" wrapText="true">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/mail.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Transactions" textAlignment="CENTER" textFill="#717272">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/print.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutX="750.0" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Chats" textAlignment="CENTER" textFill="#717272" wrapText="true">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/chat.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <JFXButton buttonType="RAISED" layoutY="12.0" prefHeight="57.0" prefWidth="150.0" text="Dashboard" textAlignment="CENTER" textFill="#717272" wrapText="true">
-                     <font>
-                        <Font name="Nunito Bold" size="15.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/dash.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-               </children>
-            </Pane>
-            <Pane layoutY="7.0" prefHeight="80.0" prefWidth="159.0">
-               <children>
-                  <Label layoutX="42.0" layoutY="32.0" text="Brand &amp; Logo">
-                     <font>
-                        <Font name="Nunito Bold" size="12.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
-      <Pane id="pd-main-pane" layoutX="1068.0" prefHeight="768.0" prefWidth="298.0" stylesheets="@../styles/Styles.css">
-         <children>
-            <Pane id="pd-pane" layoutX="4.0" layoutY="14.0" prefHeight="80.0" prefWidth="290.0" stylesheets="@../styles/Styles.css">
-               <children>
-                  <Label layoutX="95.0" layoutY="20.0">
-                     <font>
-                        <Font name="Nunito Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="57.0" fitWidth="177.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/alvin.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Label layoutX="17.0" layoutY="134.0" text="PERSONAL DETAILS">
-               <font>
-                  <Font name="Nunito Bold" size="13.0" />
-               </font>
-            </Label>
-            <Line id="pd-line" endX="100.0" layoutX="187.0" layoutY="109.0" startX="-170.0" stroke="#9e9999" strokeMiterLimit="15.0" />
-            <Label layoutX="17.0" layoutY="161.0" text="Name" textFill="#5e5d5d">
-               <font>
-                  <Font name="Nunito Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="19.0" layoutY="218.0" text="Contact Number" textFill="#5e5d5d">
-               <font>
-                  <Font name="Nunito Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="19.0" layoutY="284.0" text="ID Number" textFill="#5e5d5d">
-               <font>
-                  <Font name="Nunito Bold" size="12.0" />
-               </font>
-            </Label>
-            <Line id="pd-line" endX="100.0" layoutX="187.0" layoutY="394.0" startX="-170.0" stroke="#9e9999" strokeMiterLimit="15.0" />
-            <Label layoutX="19.0" layoutY="418.0" text="Address" textFill="#5e5d5d">
-               <font>
-                  <Font name="Nunito Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="19.0" layoutY="496.0" text="Other Info" textFill="#5e5d5d">
-               <font>
-                  <Font name="Nunito Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="17.0" layoutY="183.0" text="Calvin &quot;Panot&quot; Reyes">
-               <font>
-                  <Font name="Nunito Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="17.0" layoutY="242.0" text="09178032444">
-               <font>
-                  <Font name="Nunito Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="20.0" layoutY="311.0" text="2018-021196">
-               <font>
-                  <Font name="Nunito Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="20.0" layoutY="447.0" text="Somewhere in Canada">
-               <font>
-                  <Font name="Nunito Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="20.0" layoutY="522.0" text="Father is Panot also">
-               <font>
-                  <Font name="Nunito Bold" size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
       <TitledPane id="tj-pane" animated="false" collapsible="false" layoutX="190.0" layoutY="206.0" prefHeight="392.0" prefWidth="688.0" stylesheets="@../styles/Styles.css" text="Wireless Request" textFill="WHITE" visible="false">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -419,7 +254,7 @@
             <Font name="Lato Black" size="22.0" />
          </font>
       </TitledPane>
-      <Pane layoutX="4.0" layoutY="72.0" prefHeight="698.0" prefWidth="1070.0">
+      <Pane layoutX="4.0" layoutY="95.0" prefHeight="675.0" prefWidth="1070.0">
          <children>
             <TitledPane id="tj-pane" animated="false" collapsible="false" layoutX="28.0" layoutY="33.0" prefHeight="318.0" prefWidth="1014.0" stylesheets="@../styles/Styles.css" text="Client Details" textFill="WHITE">
                <content>
@@ -615,6 +450,15 @@
                   </ImageView>
                </graphic>
             </TitledPane>
+         </children>
+      </Pane>
+      <Pane id="nav-bar-pane" layoutX="3.0" prefHeight="96.0" prefWidth="1072.0" stylesheets="@../styles/Styles.css">
+         <children>
+            <JFXButton layoutX="39.0" layoutY="31.0" text="Back" textFill="#0d68b8">
+               <font>
+                  <Font name="Lato Bold" size="18.0" />
+               </font>
+            </JFXButton>
          </children>
       </Pane>
    </children>
